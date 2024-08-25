@@ -3,7 +3,6 @@ import { Component, ContentChild, EventEmitter, Input, Output, TemplateRef } fro
 @Component({
   selector: 'app-selector',
   templateUrl: './selector.component.html',
-  styleUrl: './selector.component.scss'
 })
 export class SelectorComponent<T extends { name: string }> {
   picked: T | undefined;
